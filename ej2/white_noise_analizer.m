@@ -6,12 +6,12 @@ function white_noise_analizer(wn)
 		a =  autocorrelation(wn,p + (m-1));
 		autcor(p) = a;
 		autcor(m + 1 + p) = a;
-    end
+	end
 	autcor(m + 1) = autocorrelation(wn,0);
 	
 	l = (length(autcor) - 1) / 2;
 	x = [-l:l];
 	stem(x,autcor);
-    title('autocorrelación de un estímulo de ruido blanco');
-    xlabel('lag');
+	title('Autocorrelación de un estímulo de ruido blanco','fontsize',14);
+	xlabel('lag','fontsize',12);
 end

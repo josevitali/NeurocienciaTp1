@@ -1,4 +1,4 @@
-function ej1()
+function [var_coef,fano_fact] = ej1()
     [X, ws] = spike_generator(1000, 10);
     intervals = get_intervals(ws, 1);
     var_coef = std(intervals) / mean(intervals);
@@ -10,6 +10,6 @@ function ej1()
     end
     fano_fact;
     hist(intervals);
-    title('Intervalos entre disparos');
-    xlabel('tiempo (s)');
+    title('Histograma de longitud de intervalos entre disparos','fontsize',14);
+    xlabel('tiempo (s)','fontsize',12);
 end
