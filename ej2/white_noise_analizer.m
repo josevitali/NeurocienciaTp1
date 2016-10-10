@@ -5,13 +5,13 @@ function white_noise_analizer(wn)
 	for p = 1 : m
 		a =  autocorrelation(wn,p + (m-1));
 		autcor(p) = a;
-		autcor(m + 1 + p) = a;
+		autcor(2*m + 2 - p) = a;
 	end
 	autcor(m + 1) = autocorrelation(wn,0);
 	
 	l = (length(autcor) - 1) / 2;
 	x = [-l:l];
-	stem(x,autcor);
+	stem(x,autcor,'linewidth',2,'markersize',7,'filled');
 	title('Autocorrelación de un estímulo de ruido blanco','fontsize',14);
 	xlabel('lag','fontsize',12);
 end
