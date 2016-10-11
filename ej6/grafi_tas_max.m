@@ -1,0 +1,1 @@
+plot(stim,mean(neuron1)/get_rmax(neuron1),stim,mean(neuron2)/get_rmax(neuron2),stim,mean(neuron3)/get_rmax(neuron3),stim,mean(neuron4)/get_rmax(neuron4)); xlabel('Estímulo (dir viento)'); ylabel('Velocidad de disparos(Hz)'); title('f / rmax y direccion');
