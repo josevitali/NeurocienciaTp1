@@ -37,12 +37,4 @@ function [pct]  = ej5(experiments, D, neurons)
 
 end
 
-function X = underZero(X)
-	for j = 1 : length(X(1,:))
-		for i = 1 : length(X(:,1))
-			if(!X(i,j))
-				X(i,j)=0;
-			end
-		end
-	end
-end
+

@@ -6,7 +6,9 @@ function ej3()
 	times = -1 * [0 : sample_frec : dt];
 	times = fliplr(times);
 	plot(times,mean_stims,'linewidth',3);
-    title('Media de estímulos','fontsize',14);
+    title('Media de estimulos','fontsize',14);
     xlabel('tiempo (ms)','fontsize',12);
-    ylabel('estímulo','fontsize',12);
+    ylabel('estimulo','fontsize',12);
+    set(gca, 'linewidth', 2, 'fontsize', 12);
+
 end

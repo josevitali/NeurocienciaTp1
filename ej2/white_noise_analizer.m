@@ -12,6 +12,8 @@ function white_noise_analizer(wn)
 	l = (length(autcor) - 1) / 2;
 	x = [-l:l];
 	stem(x,autcor,'linewidth',2,'markersize',7,'filled');
-	title('Autocorrelación de un estímulo de ruido blanco','fontsize',14);
+	title('Autocorrelacion de un estimulo de ruido blanco','fontsize',14);
 	xlabel('lag','fontsize',12);
+	set(gca, 'linewidth', 2, 'fontsize', 12)
+	
 end
