@@ -1,0 +1,7 @@
+function wn = uniform_white_noise(n, var)
+
+    b = (-4 + sqrt(16+192*var)) /
+
+    wn = a + (b - a) * rand(1 , n);
+
+end
