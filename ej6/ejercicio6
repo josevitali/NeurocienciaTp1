@@ -1,0 +1,4 @@
+[medias , varianzas] = fano(neuron1);
+rectaAjuste = polyval(polyfit(medias,varianzas,1),medias);
+plot(medias,rectaAjuste,medias,varianzas,'.'); xlabel('Media'); ylabel('varianza');
+

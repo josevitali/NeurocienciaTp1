@@ -11,8 +11,8 @@ function ej6a()
 	ylabel('tasa de disparo media (Hz)','fontsize',12);
 	title('Curva de ajuste','fontsize',14);
 	set(gca, 'linewidth', 3, 'fontsize', 12);
-	copied_legend = findobj(gcf(),"type","axes","Tag","legend");
-	set(copied_legend, "FontSize", 12);
+	copied_legend = findobj(gcf(),'type','axes','Tag','legend');
+	set(copied_legend, 'FontSize', 12);
 	print('curva_de_ajuste.png');
 
 
@@ -34,8 +34,8 @@ function ej6a()
 	ylabel('tasa de disparo media (Hz)','fontsize',12);
 	title('Curva de ajuste aproximada','fontsize',14);
 	set(gca, 'linewidth', 3, 'fontsize', 12);
-	copied_legend = findobj(gcf(),"type","axes","Tag","legend");
-	set(copied_legend, "FontSize", 12);
+	copied_legend = findobj(gcf(),'type','axes','Tag','legend');
+	set(copied_legend, 'FontSize', 12);
 	print('curva_de_ajuste_aprox.png');
 
 
