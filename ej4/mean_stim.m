@@ -4,7 +4,7 @@ function mean_stimuli = mean_stim(rho, stim, dt, sample_frec)
 	n = sum(rho(i:end));
 	stimuli = zeros(n,i);
 
-	while i < length(rho)
+	while i <= length(rho)
 		if rho(i) == 1
 			j = i - dt/sample_frec;
 			stimuli(p,:) = stim(j:i);
