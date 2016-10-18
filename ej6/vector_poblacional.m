@@ -6,7 +6,7 @@ function [ vec_pob,angulo ] = vector_poblacional( n1,n2,n3,n4,c,ras )
     vec_pob(2,:) =    ras(2) /get_rmax(n2) * c(2);
     vec_pob(3,:) =  ras(3) /get_rmax(n3) * c(3);
     vec_pob(4,:) =  ras(4)  /get_rmax(n4)* c(4);
-    variable = sum(vec_pob);
+    variable = sum(abs(vec_pob));
     angulo = radtodeg(acos(variable));
 end
  
