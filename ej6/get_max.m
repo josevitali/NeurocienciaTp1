@@ -3,7 +3,7 @@ function max = get_max(x)
     dim = size(x);
     length = dim(2);
     for i = 1 : length
-        if(x(i) > max)
+        if(x(i) > max(1))
             max(1) = x(i);
             max(2) = i;
         end
