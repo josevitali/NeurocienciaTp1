@@ -29,7 +29,7 @@ function [pct]  = ej5(experiments, D, neurons)
 		m = m + 1;
 	end
 
-	plot(D,pct,'linewidth',3);
+	plot(D,pct,'x','linewidth',2);
 	title('Frecuencia de aciertos','fontsize',14);
 	xlabel('d (discriminabilidad)','fontsize',12);
 	ylabel('frecuencia','fontsize',12);
