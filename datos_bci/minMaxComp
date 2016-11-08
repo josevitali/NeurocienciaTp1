@@ -1,0 +1,17 @@
+function [ maximo,minimo ] = ambosOjos( ambos )
+     threshold = getThreshold(ambos);
+     pendientes = diff(ambos); %Pendientes
+     %Ahora encontramos los cambios de pendientes
+     for i = 1 : size(pendientes)
+        while( pendientes(i) > 0)
+            i= i + 1;
+        end
+        % me guardo el valor donde fue tope
+        maximo = ambos(i+1);
+        while(pendientes(i) < 0 )
+            i = i + 1;
+        end
+        minimo = ambos(i);
+     end
+end
+
